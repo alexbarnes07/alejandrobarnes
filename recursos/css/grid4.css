@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "c2 c3 c4"
+        "c5 c5 c6";
+    grid-template-columns: 100px 200px 200px;
+    grid-template-rows: auto auto auto;
+    gap: 1px;
+    background-color: #5D6D7E;
+    padding: 1px;
+}
+.box {
+    background-color: #AAB7B8;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.titulo { grid-area: titulo; }
+.c2 { grid-area: c2; }
+.c3 { grid-area: c3; }
+.c4 { grid-area: c4; }
+.c5 { grid-area: c5; }
+.c6 { grid-area: c6; }

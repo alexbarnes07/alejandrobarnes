@@ -1,0 +1,41 @@
+/* Establecer el estilo de la página */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: rgba(123, 198, 199, 0.8); /* Color de fondo */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Estilo para la lista no ordenada */
+ul.menu {
+    display: flex; /* Usar Flexbox */
+    justify-content: space-evenly; /* Distribuir los elementos de manera uniforme */
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+/* Estilo para los elementos de la lista */
+ul.menu li {
+    flex: 1; /* Cada enlace ocupa un espacio igual */
+    text-align: center; /* Centrar los enlaces */
+}
+
+/* Estilo para los enlaces */
+ul.menu a {
+    display: block; /* Convertir el enlace en un bloque para ocupar todo el espacio */
+    padding: 15px 0; /* Añadir un poco de espacio alrededor */
+    color: #000; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Hacer el texto más negrita */
+}
+
+/* Estilo para el hover de los enlaces */
+ul.menu a:hover {
+    background-color: rgba(100, 150, 150, 0.8); /* Cambiar color de fondo al pasar el ratón */
+    color: white; /* Cambiar color de texto en hover */
+}

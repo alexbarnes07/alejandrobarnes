@@ -1,0 +1,65 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 12.5%; /* Relación 1:8, sidebar ocupa 1/9 del ancho total */
+    background-color: rgba(123, 198, 199, 0.8); /* Color de fondo */
+    padding: 20px;
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+}
+
+/* Estilo para la lista en el sidebar */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Espacio entre los items del menú */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000; /* Color de texto */
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid gray; /* Borde inferior de 1px */
+}
+
+.sidebar a:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Efecto hover en el enlace */
+}
+
+/* Contenido */
+.content {
+    flex-grow: 1; /* El contenido ocupa el resto del espacio disponible */
+    background-color: rgba(193, 219, 210, 1.00); /* Color de fondo del contenido */
+    padding: 20px;
+}
+
+/* Estilos de texto */
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}

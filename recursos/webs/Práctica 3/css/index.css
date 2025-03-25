@@ -1,0 +1,59 @@
+nav {
+    background-color: black;
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+    font-size: 14px;
+}
+
+nav li{
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #222;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: aquamarine;
+}
+
+body {
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+}
+h1{
+    text-align: center;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    
+}
+
+main {
+    float: right;
+    width: 70%;
+}
+
+#tres-columnas{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#tres-columnas li{
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+img {
+    float:left;
+    width: 45%;
+    margin-right:10px;
+}

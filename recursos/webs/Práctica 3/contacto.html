@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/partecomunweb.css" />
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
+
+    <title>MiContactoSMR2</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contacto.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contacta con nosotros</h2>
+        <form action="index.html" method="POST">
+            <br><label>Nombre y apellidos: </label><input type="text" placeholder="Introduzca nombre...">
+            <br><label>Email: </label><input type="email" placeholder="Introduzca email...">
+            <br><label>Texto: </label><textarea placeholder="Introduzca su consulta..."></textarea>
+            <br><label>¿A quién deseo contactar?</label>
+
+            <label for="gerente"><input type="radio" id="gerente" name="personaContacto" value="Gerente">Gerente</label>
+            <label for="desarrollador"><input type="radio" id="desarrollador" name="personaContacto"
+                    value="Desarrollador">
+                Desarrollador</label>
+            <br><label for="libroFav">Seleccionar coche favorito:</label><br>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+            <label for="preferencias">Marca tus medios de transporte que uses habitualmente:</label><br>
+            <label for="vehicle1"> 
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bicicleta">Bicicleta
+            </label>
+            <br>
+            <label for="vehicle2">            
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Autobús">Autobús
+            </label>
+            <br>
+            <label for="vehicle3">            
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Coche">Coche
+            </label>
+            <br>
+            <input type="submit" value="Contactar">
+        </form>
+    </main>
+</body>
+
+</html>

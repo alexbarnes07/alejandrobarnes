@@ -1,0 +1,49 @@
+.contenedor {
+    font-family: arial;
+    width: 350px; 
+    background-color: white;
+    align-items: center;
+    border: 3px;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 5px;
+    font-weight: unset;
+}
+
+header {
+    padding-left: 10px;
+    margin-top: 0px 0px 0px 3px ;
+}
+
+main {
+    padding-left: 10px;
+}
+
+.imagen{
+  width: 275px;
+  text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    background: #6599ff;
+    color:  white;
+    margin: 0cm;
+    border-radius: 5px;
+
+
+}
+
+h1 {
+    font-weight: unset;
+    font-size: 18px;
+
+}
+
+h2 {
+
+}
+
+p {
+    margin: 0;
+}

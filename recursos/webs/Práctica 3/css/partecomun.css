@@ -1,0 +1,22 @@
+nav {
+    background-color: black;
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+    font-size: 14px;
+}
+
+nav li{
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #222;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: aquamarine;
+}

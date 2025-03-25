@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta */
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Encabezado con imagen de fondo */
+.card-header img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Avatar */
+.card-avatar {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+}
+
+.card-avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 50px 20px 20px;
+}
+
+.card-content h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Estadísticas */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.stats strong {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    background: #f4c20d;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #e0b50c;
+}
+
+/* Descripción */
+.card-description {
+    font-size: 14px;
+    color: #555;
+    padding: 0 15px 15px;
+}

@@ -1,0 +1,52 @@
+/* Establecer el estilo de la página */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh; /* Hacer que el body ocupe toda la altura de la pantalla */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: rgba(123, 198, 199, 0.8); /* Color de fondo */
+    width: 200px; /* Ancho del menú */
+    height: 100%; /* Hacer que el menú ocupe toda la altura de la página */
+    padding: 10px 0;
+    position: fixed; /* Hacer que el menú esté fijo en la parte izquierda */
+    top: 0; /* Alinearlo con la parte superior de la pantalla */
+    left: 0; /* Alinearlo con la parte izquierda de la pantalla */
+}
+
+/* Estilo para la lista no ordenada */
+ul.menu {
+    display: flex; /* Usamos Flexbox */
+    flex-direction: column; /* Hacer el menú vertical */
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+/* Estilo para los elementos de la lista */
+ul.menu li {
+    text-align: center; /* Centrar los enlaces */
+}
+
+/* Estilo para los enlaces */
+ul.menu a {
+    display: block; /* Convertir el enlace en un bloque para ocupar todo el espacio */
+    padding: 15px 0; /* Añadir un poco de espacio alrededor */
+    color: #000; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Hacer el texto más negrita */
+    text-align: center;
+}
+
+/* Estilo para el hover de los enlaces */
+ul.menu a:hover {
+    background-color: rgba(100, 150, 150, 0.8); /* Cambiar color de fondo al pasar el ratón */
+    color: white; /* Cambiar color de texto en hover */
+}
+
+button {
+    padding-left: 10cm;
+}

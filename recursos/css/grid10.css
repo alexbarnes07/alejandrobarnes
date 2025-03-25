@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nested-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .nested-grid-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,45 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    gap: 2px; /* Separación entre los bloques */
+    height: 100vh; /* Ocupa todo el alto del viewport */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: rgba(123, 198, 199, 0.8); /* Color de fondo del sidebar */
+    width: 25%; /* El ancho del sidebar es la cuarta parte del contenido */
+    padding: 12px 24px; /* Padding vertical de 12px y lateral de 24px */
+    height: 100vh; /* El sidebar ocupa toda la altura del viewport */
+}
+
+/* Contenido principal */
+.content {
+    background-color: rgba(193, 219, 210, 1.00); /* Color de fondo del contenido */
+    flex-grow: 1; /* El contenido ocupa el resto del espacio disponible */
+    padding: 12px 24px; /* Padding vertical de 12px y lateral de 24px */
+    height: 100vh; /* El contenido ocupa toda la altura del viewport */
+}
+
+/* Estilos para el texto */
+h2 {
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+}

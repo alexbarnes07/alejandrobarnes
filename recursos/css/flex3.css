@@ -1,0 +1,56 @@
+/* Estilo general */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: rgba(123, 198, 199, 0.8); /* Color de fondo */
+    padding: 20px;
+}
+
+/* Estilo para el menú */
+ul.menu {
+    display: flex;  /* Usamos Flexbox para las columnas */
+    justify-content: space-between; /* Distribuir el espacio entre las columnas */
+    list-style-type: none;  /* Eliminar los puntos de la lista */
+    margin: 0;  /* Eliminar márgenes */
+    padding: 0;  /* Eliminar relleno */
+}
+
+/* Estilo para cada columna */
+ul.menu li.column {
+    background-color: rgba(123, 198, 199, 0.5); /* Fondo negro */
+    color: black; /* Letra blanca */
+    flex: 1;  /* Las columnas se expanden para ocupar el espacio disponible */
+    margin: 0 10px; /* Espacio entre las columnas */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinear el contenido de cada columna de arriba a abajo */
+}
+
+/* Asegurar que las columnas tengan la misma altura */
+ul.menu li.column h3 {
+    margin-top: 0;
+}
+
+/* Estilo para el título de las columnas */
+ul.menu li.column h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenido de las columnas */
+ul.menu li.column p {
+    flex-grow: 1; /* Hacer que el contenido crezca y ocupe todo el espacio disponible */
+    margin-bottom: 0;
+}
+
+/* Estilo de la imagen si la tienes */
+ul.menu li.column img {
+    max-width: 100%;
+    height: auto;
+}

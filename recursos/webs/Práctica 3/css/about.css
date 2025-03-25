@@ -1,0 +1,32 @@
+
+main {
+    width:75%;
+    margin-left: 25%;
+}
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+table {
+    /*margin: 20px auto;*/
+    border-collapse: collapse; /*Esto sirve para que se mezclen los bordes y no haya espacio vacío entre ellos en la tabla*/
+    width: 60%;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #4cae4c;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #e9e9e9;
+}

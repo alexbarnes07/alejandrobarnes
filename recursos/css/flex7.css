@@ -1,0 +1,70 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro de la card estarán uno debajo del otro */
+    width: 300px;
+    height: 400px;
+    background-color: rgba(193, 219, 210, 1.00);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombreado */
+    overflow: hidden; /* Evitar que el contenido se salga de la tarjeta */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(123, 198, 199, 0.8); /* Color de fondo */
+}
+
+.header h2 {
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Body */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* El cuerpo ocupa el espacio restante */
+    padding: 20px;
+    text-align: center;
+}
+
+.body p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(123, 198, 199, 0.8);
+}
+
+.footer h4 {
+    font-size: 1em;
+    color: white;
+}

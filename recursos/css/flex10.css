@@ -1,0 +1,67 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh; /* Asegura que el body ocupe todo el alto del viewport */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #f0f0f0; /* Fondo claro */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100%; /* Asegura que ocupe todo el alto */
+    padding: 24px;
+}
+
+/* Columnas */
+.column {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; /* La altura de las columnas será la altura del viewport */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Relación de tamaños 1:2:1 */
+.left, .right {
+    flex: 1;
+}
+
+.center {
+    flex: 2;
+}
+
+/* Titular */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Párrafos */
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
