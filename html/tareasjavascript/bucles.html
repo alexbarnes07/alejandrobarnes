@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../recursos/imagen/logo.jpg">
+    <title>Bucles</title>
+</head>
+<body>
+    <nav>
+        <img src="../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../JavaScript.html">Java Script</a></li>
+            <li><a href="../html.html">Html</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+            const submenu = document.querySelector(".submenu");
+
+            dropdown.addEventListener("click", function() {
+                submenu.classList.toggle("show");
+            });
+
+            // Cerrar el menú si se hace clic fuera
+            document.addEventListener("click", function(event) {
+                if (!dropdown.contains(event.target)) {
+                    submenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script src= "../../recursos/js/BUCLES/ejercicio1.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio1.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio1.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio4.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio5.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio6.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio7.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio8.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio9.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/BUCLES/ejercicio10.js" type="text/javaScript"></script>
+
+    <br>
+    <h2>BUCLES</h2> 
+    <br> 
+
+    <button onclick="ejercicio2_1()"> 1. Mostrar los Números del 1 al 10 en la Consola</button><br>
+    <button onclick="ejercicio2_2()"> 2. Tabla de Multiplicar de un Número</button><br>
+    <button onclick="ejercicio2_3()"> 3. Contar Números Pares del 1 al 20</button><br>
+    <button onclick="ejercicio2_4()"> 4. Pedir Nombres Hasta que el Usuario Escriba "salir"</button><br>
+    <button onclick="ejercicio2_5()"> 5. Contador de Vocales en una Palabra</button><br>
+    <button onclick="ejercicio2_6()"> 6. Sumar los Números de un Array</button><br>
+    <button onclick="ejercicio2_7()"> 7. Números Primos Hasta un Número Dado</button><br>
+    <button onclick="ejercicio2_8()"> 8. Invertir un Texto</button><br>
+    <button onclick="ejercicio2_9()"> 9. Contar Palabras en una Frase</button><br>
+    <button onclick="ejercicio2_10()"> 10. Generar un Número Secreto y Adivinarlo</button><br>
+</body>
+</html>

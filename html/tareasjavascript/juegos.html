@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../recursos/imagen/logo.jpg">
+    <title>Juegos</title>
+</head>
+<body>
+    <nav>
+        <img src="../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../JavaScript.html">Java Script</a></li>
+            <li><a href="../html.html">Html</a></li>
+        </ul>
+    </nav>
+
+
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+            const submenu = document.querySelector(".submenu");
+
+            dropdown.addEventListener("click", function() {
+                submenu.classList.toggle("show");
+            });
+
+            // Cerrar el menú si se hace clic fuera
+            document.addEventListener("click", function(event) {
+                if (!dropdown.contains(event.target)) {
+                    submenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+            const submenu = document.querySelector(".submenu");
+
+            dropdown.addEventListener("click", function() {
+                submenu.classList.toggle("show");
+            });
+
+            // Cerrar el menú si se hace clic fuera
+            document.addEventListener("click", function(event) {
+                if (!dropdown.contains(event.target)) {
+                    submenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+
+
+    <br>
+    <h2>JUEGOS</h2>
+    <br>
+
+    <script src="../../recursos/js/JUEGOS/ejercicio1.js" > </script>
+    <button onclick="ejercicio1()"> 1. Cambia el Color de Fondo Aleatoriamente</button><br>
+    <a href="ejercicio2juegos.html"><button> 2. Bola Mágica de Respuestas Aleatorias</button><br>
+    <button onclick="ejercicio3()"> 3. Juego: Adivina el Número</button><br>
+    <a href="ejercicio4juegos.html"><button> 4. Cronómetro</button></body></a><br>
+    <a href="ejercicio5juegos.html"><button>5. Piano Virtual (Con Teclado)</button></body></a><br>
+    
+    <script src= "../../recursos/js/JUEGOS/ejercicio1.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/JUEGOS/ejercicio2.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/JUEGOS/ejercicio3.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/JUEGOS/ejercicio4.js" type="text/javaScript"></script>
+    <script src= "../../recursos/js/JUEGOS/ejercicio5.js" type="text/javaScript"></script>
+</body>
+</html>

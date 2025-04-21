@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../recursos/imagen/logo.jpg">
+    <title>Formularios</title>
+</head>
+<body>
+    <nav>
+        <img src="../../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../../JavaScript.html">Java Script</a></li>
+            <li><a href="../../html.html">Html</a></li>
+        </ul>
+    </nav>
+    <form action="procesar.php" method="POST">
+
+        <label for="numero_tarjeta">Número de tarjeta:</label>
+        <input type="text" id="numero_tarjeta" name="numero_tarjeta" maxlength="16" pattern="^\d{16}$" required placeholder="Introduce los 16 números de tu tarjeta">
+
+        <label for="nombre_titular">Nombre del titular:</label>
+        <input type="text" id="nombre_titular" name="nombre_titular" required placeholder="Nombre del titular de la tarjeta">
+
+            <div class="form-group">
+            <div>
+                <label for="mes_caducidad">Mes de caducidad:</label>
+                <select id="mes_caducidad" name="mes_caducidad" required>
+                    <option value="">Seleccionar mes</option>
+                    
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </div>
+
+            
+            <div>
+                <label for="anio_caducidad">Año de caducidad:</label>
+                <select id="anio_caducidad" name="anio_caducidad" required>
+                    <option value="">Seleccionar año</option>
+
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="cvv">Código de seguridad (CVV):</label>
+        <input type="password" id="cvv" name="cvv" maxlength="3" pattern="^\d{3}$" required placeholder="Código de 3 dígitos">
+
+        <label for="notas">Notas:</label>
+        <textarea id="notas" name="notas" rows="2" cols="60" placeholder="Deja tus notas aquí (opcional)"></textarea>
+
+        <label>
+            <input type="checkbox" name="guardar_datos" value="si"> Guardar datos para otras compras
+        </label>
+
+        <br><br>
+
+        <div style="text-align: center;">
+            <button type="submit">Pagar</button>
+            <button type="reset" class="cancel-btn">Cancelar</button>
+        </div>
+    </form>
+</div>
+<br><br><a href="../formularios/form.html"><button>Volver</button></a>
+</body>
+</html>

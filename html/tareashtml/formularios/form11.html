@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../recursos/imagen/logo.jpg">
+    <title>Formularios</title>
+</head>
+<body>
+    <nav>
+        <img src="../../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../../JavaScript.html">Java Script</a></li>
+            <li><a href="../../html.html">Html</a></li>
+        </ul>
+    </nav>
+    <form action="procesar_registro.php" method="POST" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="20" required>
+        <br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="20" required>
+        <br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="Hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="Mujer" required>
+        <label for="mujer">Mujer</label>
+        <br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <input type="checkbox" id="novedades" name="novedades" checked>
+        <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+        <br>
+
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Acepto las condiciones generales del sitio sobre protección de datos</label>
+        <br>
+
+        <button type="submit">Registrar</button>
+    </form>
+    <br><br><a href="../formularios/form.html"><button>Volver</button></a>
+</body>
+</html>

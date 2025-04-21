@@ -13,12 +13,12 @@ let victoriasO = 0;
 let contraIA = false;
 
 
-const imagenX = "../../html/imagenX.jpg";
-const imagenO = "../../html/imagenO.jpg";
+const imagenX = "../html/imagenX.jpg";
+const imagenO = "../html/imagenO.jpg";
 
 
-const sonidoX = new Audio("../../html/clickX.mp3"); 
-const sonidoO = new Audio("../../html/clickO.mp3");
+const sonidoX = new Audio("../html/clickX.mp3"); 
+const sonidoO = new Audio("../html/clickO.mp3");
 
 const combinacionesGanadoras = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],

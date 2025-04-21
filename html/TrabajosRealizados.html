@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../recursos/css/JavaScript.css">
+    <link rel="stylesheet" type="text/css" href="../recursos/css/partecomun.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../recursos/imagen/logo.jpg">
+    <title>Trabajos Realizados</title>
+</head>
+<body>
+    <nav>
+        <img src="../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="JavaScript.html">Java Script</a></li>
+            <li><a href="html.html">Html</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+            const submenu = document.querySelector(".submenu");
+
+            dropdown.addEventListener("click", function() {
+                submenu.classList.toggle("show");
+            });
+
+            // Cerrar el menú si se hace clic fuera
+            document.addEventListener("click", function(event) {
+                if (!dropdown.contains(event.target)) {
+                    submenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+    <h1>Aquí podeís ver algunos de los trabajos que he realizado en el Grado Medio</h1>
+
+    <h2>Manuales de Servicios en Red</h2>
+    <a href="../recursos/pdf/ftp.pdf" target="_blank">
+        <button>manual-FTP</button>
+    </a>  
+    <a href="../recursos/pdf/Barnes Marín Alejandro UD 3 Práctica Recu.pdf" target="_blank">
+        <button>dns-linux</button>
+    </a> 
+
+    <a href="../recursos/pdf/Barnes Marín Alejandro UD 4 Práctica 1.pdf" target="_blank">
+        <button>web-windows</button>
+    </a> 
+ 
+    <br>
+    <h2>Vídeos de Sistemas Operativos en Red</h2>
+    <a href="https://youtu.be/E6ShepaiHGQ" target="_blank">
+        <button>usuarios-windows</button>
+    </a> 
+    
+    <a href="https://youtu.be/xGanc0A0SnQ" target="_blank">
+        <button>usuarios-debian</button>
+    </a>
+  
+    <br>
+    <h2>Páginas Webs</h2>
+    <a href="../recursos/webs/Práctica 3/index.html" target="_blank">
+        <button>examen-html</button>
+    </a>
+
+    <a href="https://youtu.be/JCZg7195erM" target="_blank">
+        <button>tutorial-wordpress</button>
+    </a>
+    
+    <br>
+    <h2>Prueba de Ciberseguridad</h2>
+    <a href="../recursos/videos/Examen Recuperación Seguridad.mp4" target="_blank">
+        <button>examen-seguridad</button>
+    </a>
+    <br>
+
+</body>
+</html>

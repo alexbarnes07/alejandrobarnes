@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../recursos/css/inicio.css">
+    <link rel="stylesheet" type="text/css" href="../recursos/css/partecomun.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../recursos/imagen/logo.jpg">
+    <title>Inicio</title>
+</head>
+<body>
+    <nav>
+        <img src="../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="JavaScript.html">Java Script</a></li>
+            <li><a href="html.html">Html</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+            const submenu = document.querySelector(".submenu");
+
+            dropdown.addEventListener("click", function() {
+                submenu.classList.toggle("show");
+            });
+
+            // Cerrar el menú si se hace clic fuera
+            document.addEventListener("click", function(event) {
+                if (!dropdown.contains(event.target)) {
+                    submenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+
+    <h1> Soy Alejandro Barnes Marín </h1>
+        <h2>Estudiante del Grado medio de Informática "Sistemas Microinformáticos y Redes"</h2>
+            <p>Me encuentro realizando las prácticas (FCT) en la empresa Qualica-RD,<br>                
+                Me gustaría seguir estudiando y hacer el Grado Superior de desarrollo de páginas webs.
+            </p>
+    <a href="../recursos/pdf/CV.pdf" target="_blank">
+            <button>Curriculum Vitae</button>
+    </a>
+
+    <div class="contenedor">
+        <img src="../recursos/imagen/imagen.jpg" alt="Tu Foto" class="foto-perfil">
+    </div>
+    
+
+</body>
+</html>

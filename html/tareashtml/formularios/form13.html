@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../recursos/imagen/logo.jpg">
+    <title>Formularios</title>
+</head>
+<body>
+    <nav>
+        <img src="../../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../../JavaScript.html">Java Script</a></li>
+            <li><a href="../../html.html">Html</a></li>
+        </ul>
+    </nav>
+    <form action="procesar_reserva.php" method="POST" onsubmit="return validarFormulario()">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Z][a-z]+" title="Debe empezar con mayúscula y solo contener letras" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" pattern="[A-Z][a-z]+" title="Debe empezar con mayúscula y solo contener letras" required>
+
+            <label>¿Eres miembro del club?</label>
+            <input type="checkbox" id="miembro" name="miembro" checked>
+            <label for="miembro">Sí</label>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la Reserva</legend>
+
+            <label for="deporte">Deporte:</label>
+            <select id="deporte" name="deporte" required>
+                <option value="Paddle">Paddle</option>
+                <option value="Squash">Squash</option>
+                <option value="Tenis">Tenis</option>
+            </select>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto las normas del club</label>
+        </fieldset>
+
+        <button type="submit">Reservar</button>
+    </form>
+    <br><br><a href="../formularios/form.html"><button>Volver</button></a>
+    </body>
+</html>

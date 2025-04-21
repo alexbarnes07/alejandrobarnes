@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../recursos/imagen/logo.jpg">
+    <title>Formularios</title>
+</head>
+<body>
+    <nav>
+        <img src="../../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../../JavaScript.html">Java Script</a></li>
+            <li><a href="../../html.html">Html</a></li>
+        </ul>
+    </nav>
+    <form action="procesar_receta.php" method="POST" enctype="multipart/form-data">
+        <label for="nombre_receta">Nombre de la receta:</label>
+        <input type="text" id="nombre_receta" name="nombre_receta" maxlength="80" required>
+
+        <label for="tipo_receta">Tipo de receta:</label>
+        <select id="tipo_receta" name="tipo_receta" required>
+            <option value="carne">Carne</option>
+            <option value="pescado">Pescado</option>
+            <option value="fruta">Fruta</option>
+        </select>
+
+        <label for="imagen">Imagen de la receta:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br><a href="../formularios/form.html"><button>Volver</button></a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../recursos/css/partecomun.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../recursos/imagen/logo.jpg">
+    <title>Sobre Mi </title>
+</head>
+<body>
+    <nav>
+        <img src="../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="JavaScript.html">Java Script</a></li>
+            <li><a href="html.html">Html</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+            const submenu = document.querySelector(".submenu");
+
+            dropdown.addEventListener("click", function() {
+                submenu.classList.toggle("show");
+            });
+
+            // Cerrar el menú si se hace clic fuera
+            document.addEventListener("click", function(event) {
+                if (!dropdown.contains(event.target)) {
+                    submenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+    
+<h1>Hola, ¿Te gustaría saber más de mi?</h1>
+<h2>A día de hoy todavía estoy estudiando, estos son algunos de mis conocimientos:</h2> 
+<p>En mi etapa durante el ciclo formtivo de grado medio he adquirido conociementos básicos en varios lenguajes de programación como: <br> JavaScript, Python, Html y css entro otros.<br><br>
+A su vez en el desarrollo de páginas webs he aprendido a gestionar páginas tanto de Google Sites como de Wordpress,<br>
+También he gestionado Servidores de DHCP, DNS, WEB y FTP tanto en Windows 10 como en Ubuntu.</p>
+<p>También he realizado gestión de Servidores tanto en Windows 10 como en Debian.</p>
+<p>En tema de ciberseguridad, sobre todo hemos relizado análisis de infrasestructura, Creación y </p>
+<p>reconocimiento de Fake news y/o mensajes de fishing, Creación de Hidden Service en Red Tor entre otras muchas prácticas.</p>
+
+
+</a> 
+</body>
+</html>

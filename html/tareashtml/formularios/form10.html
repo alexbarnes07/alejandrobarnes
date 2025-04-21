@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/partecomun.css">
+    <link rel="stylesheet" type="text/css" href="../../../recursos/css/JavaScript.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../recursos/imagen/logo.jpg">
+    <title>Formularios</title>
+</head>
+<body>
+    <nav>
+        <img src="../../../recursos/imagen/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../sobremi.html">Sobre Mí</a></li>
+            <li><a href="../../TrabajosRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="../../JavaScript.html">Java Script</a></li>
+            <li><a href="../../html.html">Html</a></li>
+        </ul>
+    </nav>
+<form action="#" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="nombre">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="mail">
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Su teléfono">
+
+    <fieldset>
+        <legend>Lenguajes que conoce</legend>
+        <input type="checkbox" id="javascript" name="lenguajes" value="javascript" checked>
+        <label for="javascript">Javascript</label><br>
+
+        <input type="checkbox" id="php" name="lenguajes" value="php">
+        <label for="php">PHP</label><br>
+
+        <input type="checkbox" id="nodejs" name="lenguajes" value="nodejs">
+        <label for="nodejs">NodeJS</label><br>
+
+        <input type="checkbox" id="python" name="lenguajes" value="python">
+        <label for="python">Python</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Nivel de Inglés</legend>
+        <input type="radio" id="bajo" name="ingles" value="bajo" checked>
+        <label for="bajo">Bajo</label><br>
+
+        <input type="radio" id="medio" name="ingles" value="medio">
+        <label for="medio">Medio</label><br>
+
+        <input type="radio" id="alto" name="ingles" value="alto">
+        <label for="alto">Alto</label>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+</form>
+<br><br><a href="../formularios/form.html"><button>Volver</button></a>s
+
+</body>
+</html>
